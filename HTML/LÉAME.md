@@ -1,4 +1,4 @@
-Autor: Julio César Mosquera
+Autor: JOSUE CORAQUILLA 
 💻 Programación III - Desarrollo Web Full Stack
 Repositorio oficial para las prácticas, proyectos y ejercicios de la asignatura Programación III . El curso abarca desde los fundamentos de la maquetación web y programación del lado del cliente, hasta el tipado estricto, arquitecturas backend escalables y desarrollo frontend moderno con librerías reactivas.
 
