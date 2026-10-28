@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inclusión de JavaScript</title>
+</head>
+<body>
+    <h1>Pruebas de Eventos en JavaScript</h1>
+    
+    <!-- Inputs con eventos en línea -->
+    <input type="text" 
+           oninput="console.log(this.value)" 
+           placeholder="Escribe algo...">
+           
+    <input type="text" 
+           onchange="console.log('Valor final guardado')" 
+           placeholder="Escribe y haz clic fuera">
+           
+    <input type="text" 
+           onfocus="console.log('El usuario está escribiendo')" 
+           onblur="alert('¡Atención! Saliste del campo')" 
+           placeholder="Haz clic dentro y fuera...">
+
+    <!-- Inclusión de archivo JavaScript externo -->
+    <script src="01_incluir.js"></script>
+</body>
+</html>
