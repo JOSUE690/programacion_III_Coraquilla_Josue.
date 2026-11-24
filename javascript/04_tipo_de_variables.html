@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 04 - Tipos de Variables en JS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            color: #007bff;
+        }
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        pre {
+            background: #eee;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Tipos de Variables y Datos en JavaScript</h1>
+        <p>Abre la consola de tu navegador (F12 o Clic derecho > Inspeccionar > Consola) para ver los resultados detallados del código.</p>
+    </div>
+
+    <div class="card">
+        <h2>Resultados en pantalla:</h2>
+        <div id="resultado"></div>
+    </div>
+
+    <script>
+        // 1. Declaración de variables (let y const)
+        const curso = "Programación III"; // Constante (no cambia)
+        let semestresCursados = 3;       // Variable numérica
+        let esEstudiante = true;         // Booleano (true/false)
+        let nombreCompleto = "Josué Coraquilla"; // String (cadena de texto)
+        let variableIndefinida;          // Undefined (sin valor asignado)
+        let variableNula = null;         // Null (vacío intencional)
+
+        // 2. Tipos complejos y Estructuras
+        let tecnologias = ["Python", "JavaScript", "SQL"]; // Array (Arreglo)
+        let usuario = {                                   // Objeto
+            nombre: "Josué",
+            universidad: "UTE",
+            semestre: 3
+        };
+
+        // 3. Mostrar en la consola del navegador usando typeof para ver el tipo de dato
+        console.log("--- TIPOS DE DATOS EN JS ---");
+        console.log("curso:", typeof curso, `(${curso})`);
+        console.log("semestresCursados:", typeof semestresCursados, `(${semestresCursados})`);
+        console.log("esEstudiante:", typeof esEstudiante, `(${esEstudiante})`);
+        console.log("variableIndefinida:", typeof variableIndefinida);
+        console.log("variableNula:", typeof variableNula); // Nota: en JS typeof null devuelve 'object' por un bug histórico
+        console.log("tecnologias:", Array.isArray(tecnologias), tecnologias);
+        console.log("usuario:", typeof usuario, usuario);
+
+        // 4. Mostrar resultados visualmente en el HTML
+        const contenedor = document.getElementById("resultado");
+        contenedor.innerHTML = `
+            <p><strong>Curso:</strong> ${curso} (Tipo: ${typeof curso})</p>
+            <p><strong>Semestre:</strong> ${semestresCursados} (Tipo: ${typeof semestresCursados})</p>
+            <p><strong>Es estudiante:</strong> ${esEstudiante} (Tipo: ${typeof esEstudiante})</p>
+            <p><strong>Tecnologías (Array):</strong> ${tecnologias.join(", ")}</p>
+            <p><strong>Usuario (Objeto):</strong> ${usuario.nombre} de la ${usuario.universidad}</p>
+        `;
+    </script>
+
+</body>
+</html>
