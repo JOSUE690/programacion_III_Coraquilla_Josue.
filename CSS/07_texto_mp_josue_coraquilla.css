@@ -1,0 +1,39 @@
+body {
+    font-family: Georgia, serif;
+    background-color: #ffffff;
+    color: #1e293b;
+    padding: 40px;
+}
+
+.articulo-review {
+    max-width: 650px;
+    margin: auto;
+}
+
+.titulo-principal {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 32px;
+    letter-spacing: -0.5px;
+    text-transform: capitalize;
+    color: #0f172a;
+}
+
+.subtitulo {
+    font-style: italic;
+    color: #475569;
+    font-size: 18px;
+}
+
+.cuerpo-texto {
+    line-height: 1.7;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.nota-legal {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #94a3b8;
+    margin-top: 25px;
+}
