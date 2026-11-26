@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 25px;
+    background-color: #f1f5f9;
+}
+
+.cartel {
+    padding: 16px 20px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border-left: 6px solid;
+    font-size: 15px;
+}
+
+.cartel-promo {
+    background-color: #dbeafe;
+    border-color: #1d4ed8;
+    color: #1e3a8a;
+}
+
+.cartel-stock {
+    background-color: #fef3c7;
+    border-color: #d97706;
+    color: #78350f;
+}
+
+.cartel-garantia {
+    background-color: #dcfce7;
+    border-color: #15803d;
+    color: #14532d;
+}

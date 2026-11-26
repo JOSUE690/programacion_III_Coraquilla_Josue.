@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.item {
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+.oculto-espacio {
+    visibility: hidden;
+}
+
+.eliminado-flujo {
+    display: none;
+}
